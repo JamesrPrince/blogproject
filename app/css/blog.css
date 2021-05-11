@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+
+h1, h2 {
+    font-size: 5rem;
+    font-style: italic;
+    margin: 0;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: underline wavy yellow;
+}
+
+.post {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1000px;
+    grid-gap: 10px 50px;
+    grid-template-columns: 3fr 12fr 5fr;
+}
+
+.post > * {
+    grid-column: 2 / -2;
+}
+
+.post > figure {
+    margin: 0;
+    grid-column: 1 / -1;
+}
+
+figcaption {
+    font-size: .625rem;
+}
+
+.post > blockquote {
+    grid-column: 1 / -1;
+    font-size: 3.75rem;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+}
+
+.tip {
+    background: #F5F6F2;
+    padding: .625em;
+}
+
+.tip-right {
+    grid-column: 3 / span 1;
+    text-align: left;
+    border-left: 4px solid yellow;
+}
+
+.tip-left {
+    grid-column: 1 / span 1;
+    text-align: right;
+    border-right: 4px solid yellow;
+}
