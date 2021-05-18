@@ -1,8 +1,10 @@
-@import "btn.css";
-@import "header.css";
-@import "services.css";
-@import "blogitem.css";
-@import "footer.css";
+@import url('btn.css');
+@import url('header.css');
+@import url('services.css');
+@import url('blogitem.css');
+@import url('footer.css');
+
+
 
 *,
 *::before,
@@ -94,7 +96,7 @@ strong {
 }
 
 .section__subtitle--intro {
-    display: inline-block;
+    display: grid;
 }
 
 @media (min-width: 600px) {
